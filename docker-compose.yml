@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  katabe-rest-postgres:
+    container_name: "katabe-rest-postgres"
+    image: postgres:12-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: katabe
+      POSTGRES_USER: katabe
+      POSTGRES_PASSWORD: PalingKatabe

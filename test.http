@@ -1,0 +1,23 @@
+###
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "name": "ahmad",
+  "phone": "085123456789",
+  "email": "ahmad@gmail.com",
+  "password": "rahasia"
+}
+
+<> 2022-12-15T182305.200.json
+
+###
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "name": "",
+  "phone": "",
+  "email": "ahmad@.com",
+  "password": "rahasia"
+}
