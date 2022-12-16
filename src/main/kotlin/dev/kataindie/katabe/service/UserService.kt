@@ -5,4 +5,5 @@ import dev.kataindie.katabe.model.UserResponse
 
 interface UserService {
     fun create(request: RegisterUserRequest) : UserResponse
+    fun get(id: Long) : UserResponse
 }

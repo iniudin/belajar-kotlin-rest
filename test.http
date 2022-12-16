@@ -1,23 +1,28 @@
-###
+### Register User
 POST http://localhost:8080/api/register
 Content-Type: application/json
 
 {
-  "name": "ahmad",
+  "name": "syaifudin",
   "phone": "085123456789",
-  "email": "ahmad@gmail.com",
-  "password": "rahasia"
+  "email": "syaifudin@gmail.com",
+  "password": "rahasia123"
 }
 
-<> 2022-12-15T182305.200.json
-
-###
+### Register User Bad Request
 POST http://localhost:8080/api/register
 Content-Type: application/json
 
 {
   "name": "",
-  "phone": "",
-  "email": "ahmad@.com",
-  "password": "rahasia"
+  "phone": "085123456789",
+  "email": "syaifudin@gmail.com",
+  "password": "rahasia123"
 }
+
+
+### Get User By Id
+GET http://localhost:8080/api/users/1
+
+### Get User Not Found
+GET http://localhost:8080/api/users/100000
