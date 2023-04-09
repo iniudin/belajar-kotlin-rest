@@ -1,158 +1,40 @@
-# Api Spec
+# Katalog Backend API
 
-## Register User
+Repository ini dibuat untuk sarana belajar Backend menggunakan Spring Boot dengan Kotlin
 
-Requests :
-- Method : POST
-- Endpoint : `/api/register`
-- Method :
-    -  Content-Type: application/json
-    -  Accept: application/json
-- Body :
-```json
-{
-    "name": "string",
-    "phone": "string",
-    "email": "string, unique",
-    "password": "string,min=8 max=20"
-}
-```
+### Apa yang akan dibuat?
 
-Response :
-```json
-{
-    "code": "number",
-    "status": "string",
-    "data": {
-        "id": "long",
-        "name": "string",
-        "phone": "string",
-        "email": "string, unique",
-        "created_at": "date",
-        "updated_at": "date"
-    }
-}
-```
+* Implementasi Clean Architecture
+    * Domain Driven Development
+    * Repository Pattern
+        * Menggunakan JPA
+    * Service Pattern
+* JWT Auth
+    * AccessToken
+    * RefreshToken
+* Validation
+* Unit Testing
+* Dockerize App
 
-## Login User
+### Daftar Endpoint
 
-Requests :
-- Method : POST
-- Endpoint : `/api/login`
-- Method :
-    -  Content-Type: application/json
-    -  Accept: application/json
-- Body :
-```json
-{
-    "name": "string",
-    "password": "string,min=8 max=20"
-}
-```
+Selanjutnya endpoint akan didokumentasikan menggunakan Swagger
 
-Response :
-```json
-{
-    "code": "number",
-    "status": "string",
-    "data": {
-        "id": "long",
-        "name": "string",
-        "phone": "string",
-        "email": "string, unique",
-        "created_at": "date",
-        "updated_at": "date"
-    }
-}
-```
+* User
+* Product
+* Transaction
 
-## Update User
+### Requirements
 
-Requests :
-- Method : PUT
-- Endpoint : `/api/users/{id}`
-- Method :
-    -  Content-Type: application/json
-    -  Accept: application/json
-- Body :
-```json
-{
-    "name": "string",
-    "phone": "string",
-    "email": "string, unique",
-    "password": "string,min=8 max=20"
-}
-```
+- JDK version Amazon Correto 17 LTS
+- Spring Boot 3
 
-Response :
-```json
-{
-    "code": "number",
-    "status": "string",
-    "data": {
-        "id": "long",
-        "name": "string",
-        "phone": "string",
-        "email": "string, unique",
-        "created_at": "date",
-        "updated_at": "date"
-    }
-}
-```
+### Author
 
-## List User
+dibuat oleh **Ahmad Syaifudin** dengan 🔥
 
-Requests :
-- Method : GET
-- Endpoint : `/api/users`
-- Method :
-    -  Content-Type: application/json
-    -  Accept: application/json
-- Query Param :
-    - size : number
-    - page : number
+### Referensi:
 
+Beberapa daftar referensi yang saya gunakan untuk belajar Spring Boot Kotlin
 
-Response :
-```json
-{
-    "code": "number",
-    "status": "string",
-    "data": [
-        {
-            "id": "long",
-            "name": "string",
-            "phone": "string",
-            "email": "string, unique",
-            "created_at": "date",
-            "updated_at": "date"
-        },
-        {
-            "id": "long",
-            "name": "string",
-            "phone": "string",
-            "email": "string, unique",
-            "created_at": "date",
-            "updated_at": "date"
-        }
-    ]
-}
-```
-
-
-## Delete User
-
-Requests :
-- Method : DELETE
-- Endpoint : `/api/users/{id}`
-- Method :
-    -  Content-Type: application/json
-    -  Accept: application/json
-
-Response :
-```json
-{
-    "code": "number",
-    "status": "string"
-}
-```
+* [PZN - Kotlin REST API](https://github.com/ProgrammerZamanNow/kotlin-restful-api)

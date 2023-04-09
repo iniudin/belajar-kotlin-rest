@@ -11,7 +11,7 @@ data class UserResponse(
 
     var email: String,
 
-    var createdAt: Date,
+    var createdAt: Date?,
 
     var updatedAt: Date?
 )

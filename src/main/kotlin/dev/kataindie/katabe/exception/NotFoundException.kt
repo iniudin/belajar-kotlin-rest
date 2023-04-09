@@ -1,4 +1,4 @@
-package dev.kataindie.katabe.error
+package dev.kataindie.katabe.exception
 
 class NotFoundException : Exception(){
 }

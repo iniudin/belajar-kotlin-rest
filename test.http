@@ -1,5 +1,5 @@
 ### Register User
-POST http://localhost:8080/api/register
+POST http://localhost:8080/api/auth/register
 Content-Type: application/json
 
 {
@@ -10,14 +10,14 @@ Content-Type: application/json
 }
 
 ### Register User Bad Request
-POST http://localhost:8080/api/register
+POST http://localhost:8080/api/auth/register
 Content-Type: application/json
 
 {
   "name": "",
-  "phone": "085123456789",
+  "phone": "",
   "email": "syaifudin@gmail.com",
-  "password": "rahasia123"
+  "password": "raha"
 }
 
 
